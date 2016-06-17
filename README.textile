@@ -1,0 +1,40 @@
+h1. Export Textpattern site design templates as files
+
+This Textpattern plugin adds a new pane under ‘Extensions’ from which you can export pages, forms, CSS stylesheets, section infos and site variables to a specified templates folder for convenient editing using your preferred code editor. Use it to archive a site's templates, or as an initial export from an existing site for use with "rah_flat":https://github.com/gocom/rah_flat or "oui_flat":https://github.com/NicolasGraph/oui_flat.
+
+
+h2(#installation). Installation
+
+Paste the .txt or .zip.txt package code into the Admin > Plugins pane, and install and enable the plugin. Visit the "Extensions › Export templates" pane and get ready to export.
+
+
+h2(#usage). Usage
+
+By default the plugin looks for a directory called @templates/export@ alongside the @textpattern@ directory. If the directory does not exist, the plugin will attempt to create it the first time you export your templates. If this should fail, you will need to create the directory manually and assign write permissions using @chmod@ to @775@ (or @777@ if your host requires it) before you can proceed. The name you specify for your export will be created as folder within the @/templates/export@ folder along with the subfolders. You can then copy the desired folders to your @rah_flat@ / @oui_flat@ templates folder.
+
+
+h2(#settings). Settings
+
+Forms are named according to the naming scheme @{form-name}.{type}.txp@ by default. If you prefer the @{type}.{form-name}@ naming scheme, set the variable @form_naming_scheme@ in the plugin source code appropriately:
+
+bc. 'form_naming_scheme' =>  'type_name'
+
+
+h2(#history). History
+
+This is an excerpted and reworked version of "mem_templates":https://github.com/MST-Textpattern/mrdale-txp-plugins-from-Bitbucket/tree/5c8099c89d26d622621071aadff019dadf190a14/mem_templates v0.2 with just export functionality. mem_templates was an adaptation of "hcg_templates":http://bertgarcia.org/txpide%3Astart#hcg_templates, which in turn was a modification of "mcw_templates":http://mikewest.org/archive/mcw-templates ("github":https://github.com/mikewest/mcw_templates/tree/master). This plugin builds on their work.
+
+
+h2(#changelog). Changelog
+
+h3. 0.15 – 2016-06-17
+
+* Inclusion of @section.json@ files
+* Support for @oui_flat_vars@ site variables (if present) as @variable.json@ files
+* Textpack support
+* Uses Textpattern's built-in error notices + Hive styling
+
+h3. 0.1 – 2016-06-16
+
+* Initial version of stripped down mem_templates
+* Code modifications and updates for newer txp versions

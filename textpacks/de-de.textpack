@@ -1,0 +1,25 @@
+#@admin
+#@jcr_export_txp_templates
+#@language de-de
+jcr_export_txp_tabname => Textpattern Vorlagen exportieren
+jcr_export_txp_pageheader => Textpattern Vorlagen exportieren
+jcr_export_txp_exporting => Exportiert
+jcr_export_txp_export_btn => Exportieren
+jcr_export_txp_export_success => Export erfolgreich:
+jcr_export_txp_export_error => Export fehlgeschlagen:
+jcr_export_txp_export_to => zu
+jcr_export_txp_pages_title => Seitenvorlagen
+jcr_export_txp_pages => Seitenvorlage
+jcr_export_txp_forms_title => Bausteine
+jcr_export_txp_forms => Baustein
+jcr_export_txp_styles_title => CSS Stilvorlagen
+jcr_export_txp_styles => CSS Stilvorlage
+jcr_export_txp_sections_title => Sektionen
+jcr_export_txp_sections => Sektion
+jcr_export_txp_plugins_title => Plugins
+jcr_export_txp_plugins => Plugin
+jcr_export_txp_variables_title => Variablen
+jcr_export_txp_variables => variable
+jcr_export_txp_name_export => Export-Ordner benennen
+jcr_export_txp_dir_missing => <strong>Export-Verzeichnis fehlt</strong>: Das Verzeichnis <strong>{path}</strong> existiert nicht und konnte nicht automatisch angelegt werden. Bitte das Verzeichnis manuell anlegen und mit Schreibrechte versehen. Siehe die Plugin-Hilfe.
+jcr_export_txp_dir_not_writable => <strong>Export-Verzeichnis hat keine Schreibrechte<strong>: Bitte das Verzeichnis <strong>{path}</strong> manuell mit Schreibrechte versehen. Siehe die Plugin-Hilfe.";

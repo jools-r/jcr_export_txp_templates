@@ -1,0 +1,25 @@
+#@admin
+#@jcr_export_txp_templates
+#Default language, en-us, en-gb
+jcr_export_txp_tabname => Export templates
+jcr_export_txp_pageheader => Export templates
+jcr_export_txp_exporting => Exporting
+jcr_export_txp_export_btn => Export
+jcr_export_txp_export_success => Successfully exported
+jcr_export_txp_export_error => Failure exporting
+jcr_export_txp_export_to => to
+jcr_export_txp_pages_title => page templates
+jcr_export_txp_pages => page template
+jcr_export_txp_forms_title => form templates
+jcr_export_txp_forms => form template
+jcr_export_txp_styles_title => CSS stylesheets
+jcr_export_txp_styles => CSS stylesheet
+jcr_export_txp_sections_title => sections
+jcr_export_txp_sections => section
+jcr_export_txp_plugins_title => plugins
+jcr_export_txp_plugins => plugin
+jcr_export_txp_variables_title => variables
+jcr_export_txp_variables => variable
+jcr_export_txp_name_export => Name this export
+jcr_export_txp_dir_missing => <strong>Template directory missing</strong>: The template directory <strong>{path}</strong> does not exist and could not be automatically created. Please create the directory manually and make it writable. See the plugin help.
+jcr_export_txp_dir_not_writable => <strong>Template directory not writable<strong>: Please make the directory <strong>{path}</strong> writable manually. See the plugin help for details.";
