@@ -1,0 +1,11 @@
+{
+    "name": "jcr_export_txp_templates",
+    "description": "Exports txp page and form templates, styles, plugins and site variables",
+    "version": "0.15",
+    "type": 1,
+    "author": "mcw, hcg, mem + jcr",
+    "author_uri": "http://txp.builders/",
+    "order": 5,
+    "flags": 0,
+    "help": {"file" : ["./README.textile"]}
+}
