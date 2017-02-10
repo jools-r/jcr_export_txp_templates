@@ -112,7 +112,7 @@
 
     class jcr_export_txp_template {
 
-        function jcr_export_txp_template() {
+        public function __construct() {
 
             global $prefs, $jcr_export_txp_templates_prefs;
 
@@ -193,6 +193,10 @@
 
             );
         }
+        
+        public function jcr_export_txp_template() {
+            self::__construct();
+        }
 
         /**
          * Check if directory exists and is writable and report error if not
@@ -262,8 +266,10 @@
                     } else if ($type == 'forms') {
                         if ($this->_config['form_naming_scheme'] == 'name_type') {
                             $file_name = $row['name'] . (isset($row['type']) ? ".".$row['type'] : "");
-                        } else {
+                        } else if ($this->_config['form_naming_scheme'] == 'type_name'){
                             $file_name = (isset($row['type']) ? ".".$row['type'] : "") . $row['name'];
+                        } else {
+                            $file_name = $row['name'];
                         }
                     } else {
                         $file_name = $row['name'];
